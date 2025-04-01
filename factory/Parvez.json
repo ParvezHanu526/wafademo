@@ -1,0 +1,9 @@
+{
+	"name": "Parvez",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "86596278-5e7d-40d5-ae96-1cc641df4bfa",
+		"tenantId": "ca303903-0aa5-462b-a797-90af1b14d2a2"
+	}
+}

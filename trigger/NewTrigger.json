@@ -1,0 +1,25 @@
+{
+	"name": "NewTrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/myadfcontainer/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8d1ec4cf-0179-448f-ad47-6e1e8da5cb85/resourceGroups/Parvez_ADF/providers/Microsoft.Storage/storageAccounts/adfstoragemy",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}
