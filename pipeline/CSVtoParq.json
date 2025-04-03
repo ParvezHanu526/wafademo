@@ -42,7 +42,7 @@
 							{
 								"source": {
 									"name": "Order_ID",
-									"type": "Int64",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -53,7 +53,7 @@
 							{
 								"source": {
 									"name": "Date",
-									"type": "Date",
+									"type": "DateTime",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -100,7 +100,7 @@
 							{
 								"source": {
 									"name": "Quantity",
-									"type": "Int64",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -112,7 +112,7 @@
 							{
 								"source": {
 									"name": "Price",
-									"type": "Int64",
+									"type": "Int32",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -124,7 +124,7 @@
 							{
 								"source": {
 									"name": "Total_Sales",
-									"type": "Int64"
+									"type": "Int32"
 								},
 								"sink": {
 									"name": "Total Sales",
