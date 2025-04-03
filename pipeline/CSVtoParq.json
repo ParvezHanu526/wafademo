@@ -41,20 +41,19 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Order ID",
+									"name": "Order_ID",
 									"type": "Int64",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Order ID",
-									"type": "String",
+									"name": "Order_ID",
 									"physicalType": "UTF8"
 								}
 							},
 							{
 								"source": {
 									"name": "Date",
-									"type": "Date",
+									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
@@ -65,9 +64,8 @@
 							},
 							{
 								"source": {
-									"name": "Customer Name",
-									"type": "String",
-									"physicalType": "String"
+									"name": "Customer_Name",
+									"type": "String"
 								},
 								"sink": {
 									"name": "Customer Name",
@@ -125,9 +123,8 @@
 							},
 							{
 								"source": {
-									"name": "Total Sales",
-									"type": "Int64",
-									"physicalType": "String"
+									"name": "Total_Sales",
+									"type": "Int64"
 								},
 								"sink": {
 									"name": "Total Sales",
@@ -157,7 +154,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "salesdata",
+						"referenceName": "saldata",
 						"type": "DatasetReference"
 					}
 				],
