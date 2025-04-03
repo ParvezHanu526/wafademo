@@ -64,6 +64,79 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "wildcard",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*parquet",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "PAR1\u0015\u0000\u0015��\"\u0015Ը\u000b\u0015����\u0001\u001c\u0015��\u0002\u0015\u0000\u0015\u0006\u0015\b\u0000\u0000ȋ\u0011T\u0004\u0000\u0000\u0000��\u0002\u0001",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PAR1\u0015\u0000\u0015��\"\u0015Ը\u000b\u0015����\u0001\u001c\u0015��\u0002\u0015\u0000\u0015\u0006\u0015\b\u0000\u0000ȋ\u0011T\u0004\u0000\u0000\u0000��\u0002\u0001",
+									"type": "String",
+									"physicalType": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Parquet2",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DelimitedText7",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
