@@ -1,15 +1,9 @@
 {
-	"name": "saldata",
+	"name": "salesdataa",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
-		},
-		"parameters": {
-			"Date": {
-				"type": "int",
-				"defaultValue": "DD-MM-YYYY"
-			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
@@ -26,7 +20,7 @@
 		},
 		"schema": [
 			{
-				"name": "Order_ID",
+				"name": "Order ID",
 				"type": "String"
 			},
 			{
@@ -34,7 +28,7 @@
 				"type": "String"
 			},
 			{
-				"name": "Customer_Name",
+				"name": "Customer Name",
 				"type": "String"
 			},
 			{
@@ -54,7 +48,7 @@
 				"type": "String"
 			},
 			{
-				"name": "Total_Sales",
+				"name": "Total Sales",
 				"type": "String"
 			},
 			{
