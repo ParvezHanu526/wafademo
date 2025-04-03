@@ -53,7 +53,7 @@
 							{
 								"source": {
 									"name": "Date",
-									"type": "String",
+									"type": "Date",
 									"physicalType": "String"
 								},
 								"sink": {
