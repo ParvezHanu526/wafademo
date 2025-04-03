@@ -5,12 +5,6 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"Date": {
-				"type": "int",
-				"defaultValue": "DD-MM-YYYY"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

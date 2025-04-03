@@ -41,115 +41,15 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Order_ID",
-									"type": "Int32",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Order_ID",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
 									"name": "Date",
-									"type": "DateTime",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Date",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Customer_Name",
 									"type": "String"
 								},
 								"sink": {
-									"name": "Customer Name",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Product",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Product",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Category",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Category",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Quantity",
-									"type": "Int32",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Quantity",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Price",
-									"type": "Int32",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Price",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Total_Sales",
-									"type": "Int32"
-								},
-								"sink": {
-									"name": "Total Sales",
-									"type": "String",
-									"physicalType": "UTF8"
-								}
-							},
-							{
-								"source": {
-									"name": "Region",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Region",
-									"type": "String",
-									"physicalType": "UTF8"
+									"name": "Date",
+									"type": "DateTime"
 								}
 							}
-						],
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
-						}
+						]
 					}
 				},
 				"inputs": [
